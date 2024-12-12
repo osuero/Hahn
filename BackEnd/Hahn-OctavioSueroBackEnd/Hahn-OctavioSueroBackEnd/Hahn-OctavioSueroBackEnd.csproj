@@ -18,4 +18,8 @@
     <ProjectReference Include="..\Hahn-OctavioSueroBackEnd.Core\Hahn-OctavioSueroBackEnd.Core.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+  </ItemGroup>
+
 </Project>
