@@ -7,4 +7,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Hahn-OctavioSueroBackEnd.Core\Hahn-OctavioSueroBackEnd.Core.csproj" />
+  </ItemGroup>
+
 </Project>
