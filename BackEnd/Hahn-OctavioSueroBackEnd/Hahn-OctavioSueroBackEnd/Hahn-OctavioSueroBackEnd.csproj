@@ -24,6 +24,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Hahn-OctavioSueroBackEnd.Application\Hahn-OctavioSueroBackEnd.Application.csproj" />
     <ProjectReference Include="..\Hahn-OctavioSueroBackEnd.Core\Hahn-OctavioSueroBackEnd.Core.csproj" />
+    <ProjectReference Include="..\Hahn-OctavioSueroBackEnd.Infrastructure\Hahn-OctavioSueroBackEnd.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

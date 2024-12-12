@@ -1,5 +1,5 @@
 using Hahn_OctavioSueroBackEnd.Application.Services;
-using Hahn_OctavioSueroBackEnd.Core.Data;
+using Hahn_OctavioSueroBackEnd.Infrastructure.Data;
 using Hahn_OctavioSueroBackEnd.Core.Interfaces;
 using Hahn_OctavioSueroBackEnd.Core.Repositories;
 using Microsoft.EntityFrameworkCore;

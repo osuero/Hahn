@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34309.116
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hahn-OctavioSueroBackEnd", "Hahn-OctavioSueroBackEnd\Hahn-OctavioSueroBackEnd.csproj", "{89B356AB-A1C0-428C-B002-F5FEA4375E9A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hahn-OctavioSueroBackEnd", "Hahn-OctavioSueroBackEnd\Hahn-OctavioSueroBackEnd.csproj", "{89B356AB-A1C0-428C-B002-F5FEA4375E9A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hahn-OctavioSueroBackEnd.Core", "Hahn-OctavioSueroBackEnd.Core\Hahn-OctavioSueroBackEnd.Core.csproj", "{38755C22-2A67-4FC4-82C3-FA23C7942BBA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hahn-OctavioSueroBackEnd.Core", "Hahn-OctavioSueroBackEnd.Core\Hahn-OctavioSueroBackEnd.Core.csproj", "{38755C22-2A67-4FC4-82C3-FA23C7942BBA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hahn-OctavioSueroBackEnd.Infrastructure", "Hahn-OctavioSueroBackEnd.Infrastructure\Hahn-OctavioSueroBackEnd.Infrastructure.csproj", "{F6D3F789-8848-4372-82E7-A038C71A5856}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hahn-OctavioSueroBackEnd.Infrastructure", "Hahn-OctavioSueroBackEnd.Infrastructure\Hahn-OctavioSueroBackEnd.Infrastructure.csproj", "{F6D3F789-8848-4372-82E7-A038C71A5856}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hahn-OctavioSueroBackEnd.Application", "Hahn-OctavioSueroBackEnd.Application\Hahn-OctavioSueroBackEnd.Application.csproj", "{97F08ECA-8C23-496A-9439-4A6F4C618124}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hahn-OctavioSueroBackEnd.Application", "Hahn-OctavioSueroBackEnd.Application\Hahn-OctavioSueroBackEnd.Application.csproj", "{97F08ECA-8C23-496A-9439-4A6F4C618124}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HahnWorkerService", "HahnWorkerService\HahnWorkerService.csproj", "{1091991C-0489-4CD5-B4EA-00CE8CD0469C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{97F08ECA-8C23-496A-9439-4A6F4C618124}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{97F08ECA-8C23-496A-9439-4A6F4C618124}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{97F08ECA-8C23-496A-9439-4A6F4C618124}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1091991C-0489-4CD5-B4EA-00CE8CD0469C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1091991C-0489-4CD5-B4EA-00CE8CD0469C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1091991C-0489-4CD5-B4EA-00CE8CD0469C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1091991C-0489-4CD5-B4EA-00CE8CD0469C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
