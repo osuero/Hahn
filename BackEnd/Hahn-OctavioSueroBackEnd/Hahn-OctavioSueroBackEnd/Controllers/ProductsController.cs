@@ -1,6 +1,5 @@
 ﻿using Hahn_OctavioSueroBackEnd.Application.Dto;
 using Hahn_OctavioSueroBackEnd.Application.Services;
-using Hahn_OctavioSueroBackEnd.Core.Entities;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Hahn_OctavioSueroBackEnd.Controllers
@@ -23,11 +22,48 @@ namespace Hahn_OctavioSueroBackEnd.Controllers
             return Ok(products);
         }
 
-        [HttpPost]
-        public async Task<IActionResult> Create(ProductCreateDto product)
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetById(int id)
         {
-            await _productService.AddProductAsync(product);
+            var product = await _productService.GetProductByIdAsync(id);
+            if (product == null)
+                return NotFound($"Product with ID {id} not found.");
+
             return Ok(product);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Create(ProductCreateDto productCreateDto)
+        {
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+
+            await _productService.AddProductAsync(productCreateDto);
+            return CreatedAtAction(nameof(GetById), new { id = productCreateDto.Id }, productCreateDto);
+        }
+
+        [HttpPut("{id}")]
+        public async Task<IActionResult> Update(int id, ProductDto productDto)
+        {
+            if (id != productDto.Id)
+                return BadRequest("Product ID mismatch.");
+
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+
+            await _productService.UpdateProductAsync(productDto);
+            return NoContent();
+        }
+
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> Delete(int id)
+        {
+            var product = await _productService.GetProductByIdAsync(id);
+            if (product == null)
+                return NotFound($"Product with ID {id} not found.");
+
+            await _productService.DeleteProductAsync(id);
+            return NoContent();
         }
     }
 }
