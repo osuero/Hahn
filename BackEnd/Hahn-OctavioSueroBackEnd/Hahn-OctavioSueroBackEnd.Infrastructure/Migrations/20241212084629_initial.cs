@@ -4,10 +4,10 @@
 
 #pragma warning disable CA1814 // Prefer jagged arrays over multidimensional
 
-namespace Hahn_OctavioSueroBackEnd.Core.Migrations
+namespace Hahn_OctavioSueroBackEnd.Infrastructure.Migrations
 {
     /// <inheritdoc />
-    public partial class InitialMigration : Migration
+    public partial class initial : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)

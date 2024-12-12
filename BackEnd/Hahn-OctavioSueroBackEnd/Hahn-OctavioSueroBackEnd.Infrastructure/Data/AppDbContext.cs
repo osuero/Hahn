@@ -1,13 +1,14 @@
 ﻿using Hahn_OctavioSueroBackEnd.Core.Entities;
 using Microsoft.EntityFrameworkCore;
 
-namespace Hahn_OctavioSueroBackEnd.Core.Data
+namespace Hahn_OctavioSueroBackEnd.Infrastructure.Data
 {
     public class AppDbContext : DbContext
     {
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
 
         public DbSet<Product> Products { get; set; }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);

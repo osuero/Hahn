@@ -1,6 +1,6 @@
-﻿using Hahn_OctavioSueroBackEnd.Core.Data;
-using Hahn_OctavioSueroBackEnd.Core.Interfaces;
+﻿using Hahn_OctavioSueroBackEnd.Core.Interfaces;
 using Microsoft.EntityFrameworkCore;
+using Hahn_OctavioSueroBackEnd.Infrastructure.Data;
 
 namespace Hahn_OctavioSueroBackEnd.Core.Repositories
 {
