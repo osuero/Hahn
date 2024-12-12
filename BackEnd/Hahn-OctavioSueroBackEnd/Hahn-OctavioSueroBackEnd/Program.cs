@@ -3,6 +3,7 @@ using Hahn_OctavioSueroBackEnd.Infrastructure.Data;
 using Hahn_OctavioSueroBackEnd.Core.Interfaces;
 using Hahn_OctavioSueroBackEnd.Core.Repositories;
 using Microsoft.EntityFrameworkCore;
+using Hahn_OctavioSueroBackEnd.Application;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -20,6 +21,7 @@ builder.Services.AddControllers();
 // Configure Swagger/OpenAPI
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddAutoMapper(typeof(MappingProfile));
 
 var app = builder.Build();
 

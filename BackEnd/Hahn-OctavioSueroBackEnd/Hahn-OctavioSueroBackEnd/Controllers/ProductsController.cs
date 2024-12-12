@@ -1,4 +1,5 @@
-﻿using Hahn_OctavioSueroBackEnd.Application.Services;
+﻿using Hahn_OctavioSueroBackEnd.Application.Dto;
+using Hahn_OctavioSueroBackEnd.Application.Services;
 using Hahn_OctavioSueroBackEnd.Core.Entities;
 using Microsoft.AspNetCore.Mvc;
 
@@ -23,7 +24,7 @@ namespace Hahn_OctavioSueroBackEnd.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Create(Product product)
+        public async Task<IActionResult> Create(ProductCreateDto product)
         {
             await _productService.AddProductAsync(product);
             return Ok(product);
