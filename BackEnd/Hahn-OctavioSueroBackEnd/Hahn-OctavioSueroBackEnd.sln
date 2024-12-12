@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hahn-OctavioSueroBackEnd", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hahn-OctavioSueroBackEnd.Core", "Hahn-OctavioSueroBackEnd.Core\Hahn-OctavioSueroBackEnd.Core.csproj", "{38755C22-2A67-4FC4-82C3-FA23C7942BBA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hahn-OctavioSueroBackEnd.Infrastructure", "Hahn-OctavioSueroBackEnd.Infrastructure\Hahn-OctavioSueroBackEnd.Infrastructure.csproj", "{F6D3F789-8848-4372-82E7-A038C71A5856}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{38755C22-2A67-4FC4-82C3-FA23C7942BBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{38755C22-2A67-4FC4-82C3-FA23C7942BBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{38755C22-2A67-4FC4-82C3-FA23C7942BBA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6D3F789-8848-4372-82E7-A038C71A5856}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6D3F789-8848-4372-82E7-A038C71A5856}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6D3F789-8848-4372-82E7-A038C71A5856}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6D3F789-8848-4372-82E7-A038C71A5856}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
