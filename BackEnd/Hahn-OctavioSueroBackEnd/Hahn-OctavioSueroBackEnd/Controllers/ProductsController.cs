@@ -39,7 +39,7 @@ namespace Hahn_OctavioSueroBackEnd.Controllers
                 return BadRequest(ModelState);
 
             await _productService.AddProductAsync(productCreateDto);
-            return CreatedAtAction(nameof(GetById), new { id = productCreateDto.Id }, productCreateDto);
+            return Ok();
         }
 
         [HttpPut("{id}")]
