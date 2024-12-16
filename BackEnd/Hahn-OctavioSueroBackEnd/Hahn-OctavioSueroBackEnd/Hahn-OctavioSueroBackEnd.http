@@ -1,0 +1,6 @@
+@Hahn_OctavioSueroBackEnd_HostAddress = http://localhost:5138
+
+GET {{Hahn_OctavioSueroBackEnd_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
